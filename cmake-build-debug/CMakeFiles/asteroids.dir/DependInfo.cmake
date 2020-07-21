@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/mateusz/Desktop/C++/asteroids/Drawable.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Drawable.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/Game.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Game.cpp.o"
+  "/Users/mateusz/Desktop/C++/asteroids/Player.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Player.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/main.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

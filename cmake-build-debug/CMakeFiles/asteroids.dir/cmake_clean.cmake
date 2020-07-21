@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/asteroids.dir/Drawable.cpp.o"
   "CMakeFiles/asteroids.dir/Game.cpp.o"
+  "CMakeFiles/asteroids.dir/Player.cpp.o"
   "CMakeFiles/asteroids.dir/main.cpp.o"
   "asteroids"
   "asteroids.pdb"

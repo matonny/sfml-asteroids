@@ -123,6 +123,33 @@ asteroids/fast:
 	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/build
 .PHONY : asteroids/fast
 
+Drawable.o: Drawable.cpp.o
+
+.PHONY : Drawable.o
+
+# target to build an object file
+Drawable.cpp.o:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Drawable.cpp.o
+.PHONY : Drawable.cpp.o
+
+Drawable.i: Drawable.cpp.i
+
+.PHONY : Drawable.i
+
+# target to preprocess a source file
+Drawable.cpp.i:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Drawable.cpp.i
+.PHONY : Drawable.cpp.i
+
+Drawable.s: Drawable.cpp.s
+
+.PHONY : Drawable.s
+
+# target to generate assembly for a file
+Drawable.cpp.s:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Drawable.cpp.s
+.PHONY : Drawable.cpp.s
+
 Game.o: Game.cpp.o
 
 .PHONY : Game.o
@@ -149,6 +176,33 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Game.cpp.s
 .PHONY : Game.cpp.s
+
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Player.cpp.s
+.PHONY : Player.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... asteroids"
+	@echo "... Drawable.o"
+	@echo "... Drawable.i"
+	@echo "... Drawable.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
