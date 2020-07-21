@@ -158,6 +158,7 @@ CMakeFiles/asteroids.dir/Game.cpp.o: /usr/local/include/SFML/Window/WindowHandle
 CMakeFiles/asteroids.dir/Game.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/asteroids.dir/Player.cpp.o: ../Drawable.h
+CMakeFiles/asteroids.dir/Player.cpp.o: ../Game.h
 CMakeFiles/asteroids.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/asteroids.dir/Player.cpp.o: ../Player.h
 CMakeFiles/asteroids.dir/Player.cpp.o: /usr/local/include/SFML/Config.hpp

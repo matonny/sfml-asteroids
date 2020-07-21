@@ -14,10 +14,10 @@ public:
     const static int SCREEN_WIDTH = 1024;
     const static int SCREEN_HEIGHT = 768;
     static void gameLoop();
+    static std::map<sf::Keyboard::Key, bool> keyMap;
 
 private:
     static sf::RenderWindow mainWindow;
-    static std::map<sf::Keyboard::Key, bool> keyMap;
 
     enum GameState {Unitialized, Playing, Exiting};
     static GameState currentState;

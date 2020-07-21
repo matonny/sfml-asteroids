@@ -7,11 +7,11 @@
 
 sf::RenderWindow Game::mainWindow;
 Game::GameState Game::currentState;
-std::map<sf::Keyboard::Key, bool> Game::keyMap;
 
 void Game::Start()
 {
     mainWindow.create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Asteroids");
+    mainWindow.setFramerateLimit(60);
     currentState = Playing;
     gameLoop();
 }
@@ -23,8 +23,9 @@ void Game::gameLoop()
     playerShape.setOutlineColor(sf::Color(255,255,255));
     playerShape.setFillColor(sf::Color(255,255,255));
     sf::Vector2<float> playerPosition(200,100);
-    Player player(0, playerShape, playerPosition);
-    while (true)
+    Player player(30, playerShape, playerPosition);
+
+    while (mainWindow.isOpen())
     {
         sf::Event currentEvent;
         while (mainWindow.pollEvent(currentEvent))
@@ -42,6 +43,7 @@ void Game::gameLoop()
             case Game::Playing:
             {
                 mainWindow.clear(sf::Color(0,0,0));
+                player.update();
                 mainWindow.draw(player.shape);
                 mainWindow.display();
                 if (currentEvent.type == sf::Event::Closed)
@@ -54,7 +56,6 @@ void Game::gameLoop()
                 default:
             {
                 mainWindow.close();
-                exit(0);
             }
         }
     }

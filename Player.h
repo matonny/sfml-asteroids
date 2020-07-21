@@ -16,16 +16,18 @@ public:
         shape = playerShape;
         position = playerPosition;
         shape.setPosition(position.x, position.y);
-        velocity = 10.0f;
+        shape.setOrigin(80,80);
+        shape.setRotation(angle);
+//        velocity = 10.0f;
     }
-    void update(float timeElapsed);
-    void shot();
+    void update();
+  //  void shot();
 private:
     float angle;
-    float angularVelocity;
-    float velocity;
-    float maxVelocity;
-    float acceleration;
+   float angularVelocity = 2;
+//    float velocity;
+//    float maxVelocity;
+//    float acceleration;
 };
 
 

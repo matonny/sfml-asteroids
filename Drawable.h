@@ -10,7 +10,6 @@
 
 class Drawable
 {
-private:
 
 public:
     sf::Vector2<float> position;
