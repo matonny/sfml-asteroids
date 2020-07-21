@@ -4,12 +4,14 @@
 #include "Game.h"
 #include "Player.h"
 #include <math.h>
+#include <iostream>
 std::map<sf::Keyboard::Key, bool> Game::keyMap;
-void Player::update()
+void Player::update(float elapsedTime)
 {
+    std::cout <<"KUPA";
     if(Game::keyMap[sf::Keyboard::Up]){
-        float changeX = 10*cos((angle+30)*M_PI/180);
-        float changeY = 10*sin((angle+30)*M_PI/180);
+        float changeX = velocity*cos((angle+30)*M_PI/180)*elapsedTime;
+        float changeY = velocity*sin((angle+30)*M_PI/180)*elapsedTime;
         position.x += changeX;
         position.y += changeY;
     }

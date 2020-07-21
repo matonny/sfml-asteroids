@@ -6,9 +6,9 @@
 #define ASTEROIDS_PLAYER_H
 
 
-#include "Drawable.h"
+#include "Visible.h"
 
-class Player : public Drawable
+class Player : public Visible
 {
 public:
     Player(int playerAngle, sf::CircleShape playerShape, sf::Vector2<float> playerPosition){
@@ -18,14 +18,13 @@ public:
         shape.setPosition(position.x, position.y);
         shape.setOrigin(80,80);
         shape.setRotation(angle);
-//        velocity = 10.0f;
     }
-    void update();
+     void update(float elapsedTime) override;
   //  void shot();
 private:
     float angle;
    float angularVelocity = 2;
-//    float velocity;
+    float velocity = 200;
 //    float maxVelocity;
 //    float acceleration;
 };

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/mateusz/Desktop/C++/asteroids/Drawable.h
-SFML/Graphics.hpp
--
-
 /Users/mateusz/Desktop/C++/asteroids/Game.cpp
 iostream
 -
@@ -17,14 +13,38 @@ Game.h
 /Users/mateusz/Desktop/C++/asteroids/Game.h
 Player.h
 /Users/mateusz/Desktop/C++/asteroids/Player.h
+GameObjectManager.h
+/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
 
 /Users/mateusz/Desktop/C++/asteroids/Game.h
 SFML/Graphics.hpp
 /Users/mateusz/Desktop/C++/asteroids/SFML/Graphics.hpp
+GameObjectManager.h
+/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
+
+/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
+string
+-
+Visible.h
+/Users/mateusz/Desktop/C++/asteroids/Visible.h
+
+/Users/mateusz/Desktop/C++/asteroids/Player.cpp
+Game.h
+/Users/mateusz/Desktop/C++/asteroids/Game.h
+Player.h
+/Users/mateusz/Desktop/C++/asteroids/Player.h
+math.h
+-
+iostream
+-
 
 /Users/mateusz/Desktop/C++/asteroids/Player.h
-Drawable.h
-/Users/mateusz/Desktop/C++/asteroids/Drawable.h
+Visible.h
+/Users/mateusz/Desktop/C++/asteroids/Visible.h
+
+/Users/mateusz/Desktop/C++/asteroids/Visible.h
+SFML/Graphics.hpp
+-
 
 /usr/local/include/SFML/Config.hpp
 TargetConditionals.h

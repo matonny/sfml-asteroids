@@ -82,22 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Drawable.cpp">
-			<Option target="asteroids"/>
-		</Unit>
-		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Drawable.h">
-			<Option target="asteroids"/>
-		</Unit>
 		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Game.cpp">
 			<Option target="asteroids"/>
 		</Unit>
 		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Game.h">
 			<Option target="asteroids"/>
 		</Unit>
+		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.cpp">
+			<Option target="asteroids"/>
+		</Unit>
+		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h">
+			<Option target="asteroids"/>
+		</Unit>
 		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Player.cpp">
 			<Option target="asteroids"/>
 		</Unit>
 		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Player.h">
+			<Option target="asteroids"/>
+		</Unit>
+		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Visible.cpp">
+			<Option target="asteroids"/>
+		</Unit>
+		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Visible.h">
 			<Option target="asteroids"/>
 		</Unit>
 		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/main.cpp">

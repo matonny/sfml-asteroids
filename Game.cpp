@@ -4,9 +4,12 @@
 #include <iostream>
 #include "Game.h"
 #include "Player.h"
+#include "GameObjectManager.h"
 
 sf::RenderWindow Game::mainWindow;
 Game::GameState Game::currentState;
+GameObjectManager Game::gameObjectManager;
+int Visible::objectCount;
 
 void Game::Start()
 {
@@ -18,16 +21,18 @@ void Game::Start()
 
 void Game::gameLoop()
 {
-
+    sf::Event currentEvent;
     sf::CircleShape playerShape(80.0f, 3);
     playerShape.setOutlineColor(sf::Color(255,255,255));
     playerShape.setFillColor(sf::Color(255,255,255));
-    sf::Vector2<float> playerPosition(200,100);
+    sf::Vector2<float> playerPosition(SCREEN_WIDTH/2,SCREEN_HEIGHT/2);
     Player player(30, playerShape, playerPosition);
-
+    player.id = Visible::objectCount;
+    Visible::objectCount++;
+    gameObjectManager.add(player.id, &player);
     while (mainWindow.isOpen())
     {
-        sf::Event currentEvent;
+
         while (mainWindow.pollEvent(currentEvent))
         {
             if (currentEvent.type == sf::Event::KeyPressed)
@@ -43,8 +48,8 @@ void Game::gameLoop()
             case Game::Playing:
             {
                 mainWindow.clear(sf::Color(0,0,0));
-                player.update();
-                mainWindow.draw(player.shape);
+                gameObjectManager.updateAll();
+                gameObjectManager.drawAll(mainWindow);
                 mainWindow.display();
                 if (currentEvent.type == sf::Event::Closed)
                 {
@@ -60,7 +65,6 @@ void Game::gameLoop()
         }
     }
 }
-
 
 
 

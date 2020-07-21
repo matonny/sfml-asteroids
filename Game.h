@@ -5,6 +5,7 @@
 #ifndef ASTEROIDS_GAME_H
 #define ASTEROIDS_GAME_H
 #include "SFML/Graphics.hpp"
+#include "GameObjectManager.h"
 
 
 class Game
@@ -15,6 +16,7 @@ public:
     const static int SCREEN_HEIGHT = 768;
     static void gameLoop();
     static std::map<sf::Keyboard::Key, bool> keyMap;
+    static GameObjectManager gameObjectManager;
 
 private:
     static sf::RenderWindow mainWindow;
