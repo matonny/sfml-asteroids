@@ -11,22 +11,24 @@
 class Player : public Visible
 {
 public:
-    Player(int playerAngle, sf::CircleShape playerShape, sf::Vector2<float> playerPosition){
+    Player(int playerAngle, sf::CircleShape playerShape, sf::Vector2<float> playerPosition)
+    {
         angle = playerAngle;
         shape = playerShape;
         position = playerPosition;
         shape.setPosition(position.x, position.y);
-        shape.setOrigin(80,80);
+        shape.setOrigin(playerShape.getRadius(), playerShape.getRadius());
         shape.setRotation(angle);
     }
-     void update(float elapsedTime) override;
-  //  void shot();
+    void update(float elapsedTime) override;
+    //  void shot();
 private:
     float angle;
-   float angularVelocity = 2;
-    float velocity = 200;
-//    float maxVelocity;
-//    float acceleration;
+    float angularVelocity = 10.0;
+    float velocity;
+    float maxVelocity = 1000.0;
+    float acceleration = 1200;
+    float decceleration = 0.90;
 };
 
 

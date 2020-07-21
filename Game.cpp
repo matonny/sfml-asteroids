@@ -21,8 +21,9 @@ void Game::Start()
 
 void Game::gameLoop()
 {
+    const float playerSize = 40.0;
     sf::Event currentEvent;
-    sf::CircleShape playerShape(80.0f, 3);
+    sf::CircleShape playerShape(playerSize, 3);
     playerShape.setOutlineColor(sf::Color(255,255,255));
     playerShape.setFillColor(sf::Color(255,255,255));
     sf::Vector2<float> playerPosition(SCREEN_WIDTH/2,SCREEN_HEIGHT/2);
