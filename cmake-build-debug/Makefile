@@ -204,6 +204,33 @@ Player.cpp.s:
 	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
+Rock.o: Rock.cpp.o
+
+.PHONY : Rock.o
+
+# target to build an object file
+Rock.cpp.o:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Rock.cpp.o
+.PHONY : Rock.cpp.o
+
+Rock.i: Rock.cpp.i
+
+.PHONY : Rock.i
+
+# target to preprocess a source file
+Rock.cpp.i:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Rock.cpp.i
+.PHONY : Rock.cpp.i
+
+Rock.s: Rock.cpp.s
+
+.PHONY : Rock.s
+
+# target to generate assembly for a file
+Rock.cpp.s:
+	$(MAKE) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/Rock.cpp.s
+.PHONY : Rock.cpp.s
+
 Visible.o: Visible.cpp.o
 
 .PHONY : Visible.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... Rock.o"
+	@echo "... Rock.i"
+	@echo "... Rock.s"
 	@echo "... Visible.o"
 	@echo "... Visible.i"
 	@echo "... Visible.s"

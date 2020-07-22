@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Game.h"
 #include "Player.h"
+#include "Rock.h"
 #include "GameObjectManager.h"
 
 sf::RenderWindow Game::mainWindow;
@@ -28,9 +29,8 @@ void Game::gameLoop()
     playerShape.setFillColor(sf::Color(255,255,255));
     sf::Vector2<float> playerPosition(SCREEN_WIDTH/2,SCREEN_HEIGHT/2);
     Player player(30, playerShape, playerPosition);
-    player.id = Visible::objectCount;
-    Visible::objectCount++;
     gameObjectManager.add(player.id, &player);
+    Rock newRock(Rock::big);
     while (mainWindow.isOpen())
     {
 

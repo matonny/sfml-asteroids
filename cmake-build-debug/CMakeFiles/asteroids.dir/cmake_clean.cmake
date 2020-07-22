@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/asteroids.dir/Game.cpp.o"
   "CMakeFiles/asteroids.dir/GameObjectManager.cpp.o"
   "CMakeFiles/asteroids.dir/Player.cpp.o"
+  "CMakeFiles/asteroids.dir/Rock.cpp.o"
   "CMakeFiles/asteroids.dir/Visible.cpp.o"
   "CMakeFiles/asteroids.dir/main.cpp.o"
   "asteroids"

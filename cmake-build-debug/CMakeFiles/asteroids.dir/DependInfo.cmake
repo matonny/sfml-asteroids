@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/mateusz/Desktop/C++/asteroids/Game.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Game.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/GameObjectManager.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/Player.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Player.cpp.o"
+  "/Users/mateusz/Desktop/C++/asteroids/Rock.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Rock.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/Visible.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Visible.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/main.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/main.cpp.o"
   )

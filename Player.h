@@ -19,14 +19,16 @@ public:
         shape.setPosition(position.x, position.y);
         shape.setOrigin(playerShape.getRadius(), playerShape.getRadius());
         shape.setRotation(angle);
+        id = Visible::objectCount;
+        Visible::objectCount++;
     }
     void update(float elapsedTime) override;
-    //  void shot();
+    //  void shoot();
 private:
     float angle;
     float angularVelocity = 10.0;
     float velocity;
-    float maxVelocity = 1000.0;
+    float maxVelocity = 500.0;
     float acceleration = 1200;
     float decceleration = 0.90;
 };

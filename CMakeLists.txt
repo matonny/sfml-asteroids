@@ -10,5 +10,5 @@ include_directories(SFML_INCLUDE_DIR)
 
 find_package(SFML 2.5.1 COMPONENTS system window graphics network audio)
 
-add_executable(asteroids main.cpp Game.cpp Game.h Visible.cpp Visible.h Player.cpp Player.h GameObjectManager.cpp GameObjectManager.h)
+add_executable(asteroids main.cpp Game.cpp Game.h Visible.cpp Visible.h Player.cpp Player.h GameObjectManager.cpp GameObjectManager.h Rock.cpp Rock.h)
 target_link_libraries (asteroids sfml-graphics sfml-window sfml-system)
