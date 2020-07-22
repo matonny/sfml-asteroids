@@ -37,6 +37,7 @@ void Player::update(float elapsedTime)
         angle += angularVelocity;
         shape.setRotation(angle);
     }
-
     shape.setPosition(position.x, position.y);
+    moveAcrossScreen();
+
 }

@@ -22,7 +22,7 @@ void Game::Start()
 
 void Game::gameLoop()
 {
-    const float playerSize = 40.0;
+    const float playerSize = 20.0;
     sf::Event currentEvent;
     sf::CircleShape playerShape(playerSize, 3);
     playerShape.setOutlineColor(sf::Color(255,255,255));

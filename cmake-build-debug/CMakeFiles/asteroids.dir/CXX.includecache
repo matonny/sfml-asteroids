@@ -18,17 +18,13 @@ string
 Visible.h
 /Users/mateusz/Desktop/C++/asteroids/Visible.h
 
-/Users/mateusz/Desktop/C++/asteroids/Rock.cpp
-Rock.h
-/Users/mateusz/Desktop/C++/asteroids/Rock.h
-Game.h
-/Users/mateusz/Desktop/C++/asteroids/Game.h
-
-/Users/mateusz/Desktop/C++/asteroids/Rock.h
+/Users/mateusz/Desktop/C++/asteroids/Visible.cpp
 Visible.h
 /Users/mateusz/Desktop/C++/asteroids/Visible.h
-GameObjectManager.h
-/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
+Game.h
+/Users/mateusz/Desktop/C++/asteroids/Game.h
+iostream
+-
 
 /Users/mateusz/Desktop/C++/asteroids/Visible.h
 SFML/Graphics.hpp

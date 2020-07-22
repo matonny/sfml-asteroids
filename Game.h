@@ -12,8 +12,8 @@ class Game
 {
 public:
     static void Start();
-    const static int SCREEN_WIDTH = 1024;
-    const static int SCREEN_HEIGHT = 768;
+    const static int SCREEN_WIDTH = 1920;
+    const static int SCREEN_HEIGHT = 1080;
     static void gameLoop();
     static std::map<sf::Keyboard::Key, bool> keyMap;
     static GameObjectManager gameObjectManager;

@@ -321,6 +321,8 @@ CMakeFiles/asteroids.dir/Rock.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/asteroids.dir/Visible.cpp.o
+ /Users/mateusz/Desktop/C++/asteroids/Game.h
+ /Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
  /Users/mateusz/Desktop/C++/asteroids/Visible.cpp
  /Users/mateusz/Desktop/C++/asteroids/Visible.h
  /usr/local/include/SFML/Config.hpp

@@ -26,7 +26,7 @@ public:
 
 
     void initRock(size rockSize);
-
+    void update(float elapsedTime);
     void destroyRock();
 
 private:

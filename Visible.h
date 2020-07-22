@@ -14,7 +14,8 @@ class Visible
 public:
 
     virtual void update(float elapsedTime);
-
+    bool isOutOfScreen();
+    void moveAcrossScreen();
     sf::Vector2<float> position;
     sf::CircleShape shape;
     int id;
