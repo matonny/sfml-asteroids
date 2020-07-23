@@ -18,11 +18,12 @@ public:
         medium = 2,
         small = 3
     };
-    Rock(size rockSize){
+     Rock(size rockSize){
         id = Visible::objectCount;
         Visible::objectCount++;
         initRock(rockSize);
     };
+    static std::vector<Rock> allRocks;
 
 
     void initRock(size rockSize);

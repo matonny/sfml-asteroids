@@ -4,7 +4,7 @@
 
 #include "Rock.h"
 #include "Game.h"
-#include "Math.h"
+#include "cmath"
 void Rock::initRock(size rockSize){
     int randomVelocity = rand() % 150 + 1;
     this->velocity = randomVelocity*4*rockSize;
@@ -13,7 +13,7 @@ void Rock::initRock(size rockSize){
     shape.setPosition(200,200);
     shape.setOrigin(shape.getRadius(), shape.getRadius());
     shape.setRotation(angle);
-    Game::gameObjectManager.add(id, this);
+
 }
 void Rock::update(float elapsedTime){
     float changeX = velocity * cos((angle + 30) * M_PI / 180) * elapsedTime;

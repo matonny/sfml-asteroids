@@ -28,9 +28,14 @@ void Game::gameLoop()
     playerShape.setOutlineColor(sf::Color(255,255,255));
     playerShape.setFillColor(sf::Color(255,255,255));
     sf::Vector2<float> playerPosition(SCREEN_WIDTH/2,SCREEN_HEIGHT/2);
-    Player player(30, playerShape, playerPosition);
-    gameObjectManager.add(player.id, &player);
-    Rock newRock(Rock::big);
+    auto player = std::make_shared<Player>(30, playerShape, playerPosition);
+    gameObjectManager.add(player->id, player);
+    for(int i = 0; i < 3; i++){
+        auto x = std::make_shared<Rock>(Rock::big);
+//        auto x = new Rock(Rock::big);
+        Game::gameObjectManager.add(x->id, x);
+    }
+
     while (mainWindow.isOpen())
     {
 

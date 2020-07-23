@@ -12,11 +12,11 @@
 class GameObjectManager
 {
 public:
-    void add(int id, Visible* object );
+    void add(int id, std::shared_ptr<Visible> object );
     void updateAll();
     void drawAll(sf::RenderWindow &window);
     sf::Clock gameClock;
-    static std::map<int, Visible*> allObjects;
+    static std::map<int, std::shared_ptr<Visible>> allObjects;
 };
 
 

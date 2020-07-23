@@ -3,14 +3,14 @@
 //
 #include "GameObjectManager.h"
 #include "Visible.h"
-std::map<int, Visible*> GameObjectManager::allObjects;
+std::map<int, std::shared_ptr<Visible>> GameObjectManager::allObjects;
 #include "GameObjectManager.h"
-void GameObjectManager::add (int id, Visible* gameObject)
+void GameObjectManager::add (int id, std::shared_ptr<Visible> gameObject)
 {
-   allObjects.insert(std::pair<int, Visible*> (id, gameObject));
+   allObjects.insert(std::pair<int, std::shared_ptr<Visible>> (id, gameObject));
 }
 void GameObjectManager::updateAll(){
-    std::map<int, Visible*>::iterator itr = allObjects.begin();
+    std::map<int, std::shared_ptr<Visible>>::iterator itr = allObjects.begin();
     sf::Time timeDelta = gameClock.restart();
     while(itr != allObjects.end()){
         itr->second->update(timeDelta.asSeconds());
@@ -18,7 +18,7 @@ void GameObjectManager::updateAll(){
     }
 }
 void GameObjectManager::drawAll(sf::RenderWindow &renderWindow){
-    std::map<int, Visible*>::iterator itr = allObjects.begin();
+    std::map<int, std::shared_ptr<Visible>>::iterator itr = allObjects.begin();
     sf::Time timeDelta = gameClock.restart();
     while(itr != allObjects.end()){
         renderWindow.draw(itr->second->shape);

@@ -16,7 +16,7 @@ void Visible::moveAcrossScreen()
     std::cout << shape.getPosition().x << " " << shape.getPosition().y << std::endl;
     if (position.y < -shape.getRadius()) //upper edge
     {
-        position.y = Game::SCREEN_HEIGHT;
+        position.y = Game::SCREEN_HEIGHT+shape.getRadius();
 
     }
     if (position.y > Game::SCREEN_HEIGHT+shape.getRadius()) //lower edge

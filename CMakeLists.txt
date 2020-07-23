@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(SFML_INCLUDE_DIR "./SFML/include")
 set(SFML_LIBRARY_DIR "./SFML/build/lib")
 
+#add_compile_options(-Wall -Wextra -pedantic)
+
 link_directories(SFML_LIBRARY_DIR)
 include_directories(SFML_INCLUDE_DIR)
 
