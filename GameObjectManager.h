@@ -8,7 +8,6 @@
 
 #include <string>
 #include "Visible.h"
-
 class GameObjectManager
 {
 public:
@@ -16,6 +15,7 @@ public:
     void updateAll();
     void drawAll(sf::RenderWindow &window);
     sf::Clock gameClock;
+    static void collisionCheck(std::shared_ptr<Visible> object);
     static std::map<int, std::shared_ptr<Visible>> allObjects;
 };
 

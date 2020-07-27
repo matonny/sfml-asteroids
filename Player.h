@@ -21,6 +21,7 @@ public:
         shape.setRotation(angle);
         id = Visible::objectCount;
         Visible::objectCount++;
+        hitbox = getHitbox(&shape);
     }
     void update(float elapsedTime) override;
     //  void shoot();

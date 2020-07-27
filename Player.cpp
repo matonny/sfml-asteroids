@@ -26,6 +26,8 @@ void Player::update(float elapsedTime)
     float changeY = velocity * sin((angle + 30) * M_PI / 180) * elapsedTime;
     position.x += changeX;
     position.y += changeY;
+    hitbox.left += changeX;
+    hitbox.top += changeY;
 
     if (Game::keyMap[sf::Keyboard::Left])
     {

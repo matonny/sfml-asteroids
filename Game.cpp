@@ -30,7 +30,7 @@ void Game::gameLoop()
     sf::Vector2<float> playerPosition(SCREEN_WIDTH/2,SCREEN_HEIGHT/2);
     auto player = std::make_shared<Player>(30, playerShape, playerPosition);
     gameObjectManager.add(player->id, player);
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < 1; i++){
         auto x = std::make_shared<Rock>(Rock::big);
 //        auto x = new Rock(Rock::big);
         Game::gameObjectManager.add(x->id, x);
