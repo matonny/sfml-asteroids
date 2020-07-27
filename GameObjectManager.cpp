@@ -2,8 +2,8 @@
 // Created by Mateusz Wygonny on 21/07/2020.
 //
 #include "GameObjectManager.h"
-#include "Visible.h"
 #include <iostream>
+#include "Visible.h"
 
 std::map<int, std::shared_ptr<Visible>> GameObjectManager::allObjects;
 
@@ -42,11 +42,19 @@ void GameObjectManager::collisionCheck(std::shared_ptr<Visible> object)
     std::map<int, std::shared_ptr<Visible>>::iterator itr = allObjects.begin();
     while (itr != allObjects.end())
     {
-        if (object != itr->second)
-        {
-            if (object->hitbox.intersects(itr->second->hitbox))
-            {
-                std::cout << "ZDERZONKO!!" << std::endl;
+        switch(object->tag){
+            case Visible::player:{
+                if(itr->second->tag == Visible::rock)
+                {
+                    if (object->hitbox.intersects(itr->second->hitbox))
+                    {
+                        //allObjects.erase(object->id);
+                        //Game::gameOver();
+                    }
+                }
+            }
+            default:{
+
             }
         }
         itr++;

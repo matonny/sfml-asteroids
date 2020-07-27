@@ -32,10 +32,8 @@ void Game::gameLoop()
     gameObjectManager.add(player->id, player);
     for(int i = 0; i < 1; i++){
         auto x = std::make_shared<Rock>(Rock::big);
-//        auto x = new Rock(Rock::big);
         Game::gameObjectManager.add(x->id, x);
     }
-
     while (mainWindow.isOpen())
     {
 
@@ -66,10 +64,13 @@ void Game::gameLoop()
             case Game::Exiting:
                 default:
             {
-                mainWindow.close();
+                mainWindow.clear(sf::Color(255,255,255));
             }
         }
     }
+}
+void Game::gameOver() {
+    currentState = Exiting;
 }
 
 

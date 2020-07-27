@@ -17,6 +17,7 @@ public:
     static void gameLoop();
     static std::map<sf::Keyboard::Key, bool> keyMap;
     static GameObjectManager gameObjectManager;
+    static void gameOver();
 
 private:
     static sf::RenderWindow mainWindow;

@@ -3,7 +3,6 @@
 //
 
 #include "Rock.h"
-#include "Game.h"
 #include "Math.h"
 void Rock::initRock(size rockSize){
     int randomVelocity = rand() % 150 + 1;

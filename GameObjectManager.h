@@ -8,14 +8,22 @@
 
 #include <string>
 #include "Visible.h"
+
 class GameObjectManager
 {
 public:
-    void add(int id, std::shared_ptr<Visible> object );
+    static void remove(std::shared_ptr<Visible> object);
+
+    void add(int id, std::shared_ptr<Visible> object);
+
     void updateAll();
+
     void drawAll(sf::RenderWindow &window);
+
     sf::Clock gameClock;
+
     static void collisionCheck(std::shared_ptr<Visible> object);
+
     static std::map<int, std::shared_ptr<Visible>> allObjects;
 };
 

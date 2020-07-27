@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/mateusz/Desktop/C++/asteroids/Bullet.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Bullet.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/Game.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Game.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/GameObjectManager.cpp.o"
   "/Users/mateusz/Desktop/C++/asteroids/Player.cpp" "/Users/mateusz/Desktop/C++/asteroids/cmake-build-debug/CMakeFiles/asteroids.dir/Player.cpp.o"

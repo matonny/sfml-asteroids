@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Bullet.cpp">
+			<Option target="asteroids"/>
+		</Unit>
+		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Bullet.h">
+			<Option target="asteroids"/>
+		</Unit>
 		<Unit filename="/Users/mateusz/Desktop/C++/asteroids/Game.cpp">
 			<Option target="asteroids"/>
 		</Unit>

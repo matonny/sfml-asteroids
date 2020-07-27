@@ -4,21 +4,24 @@
 #include "Game.h"
 #include "Player.h"
 #include <math.h>
+#include "Bullet.h"
 #include <iostream>
 
 std::map<sf::Keyboard::Key, bool> Game::keyMap;
 
 void Player::update(float elapsedTime)
 {
+    lastShot += elapsedTime;
     if (Game::keyMap[sf::Keyboard::Up])
     {
-        if(velocity <= maxVelocity)
+        if (velocity <= maxVelocity)
         {
             velocity += acceleration * elapsedTime;
         }
     } else
     {
-        if(velocity > 0){
+        if (velocity > 0)
+        {
             velocity *= decceleration;
         }
     }
@@ -39,7 +42,18 @@ void Player::update(float elapsedTime)
         angle += angularVelocity;
         shape.setRotation(angle);
     }
-    shape.setPosition(position.x, position.y);
-    moveAcrossScreen();
+    if (Game::keyMap[sf::Keyboard::Space])
+    {
+        if (lastShot >= fireRate)
+        {
+            auto x = std::make_shared<Bullet>(this->shape);
+            Game::gameObjectManager.add(x->id , x);
+            lastShot = 0.0;
+            std::cout << "shooting " << x->id << std::endl;
+        }
+    }
+        shape.setPosition(position.x, position.y);
+        moveAcrossScreen();
+
 
 }

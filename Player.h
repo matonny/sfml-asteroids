@@ -22,7 +22,10 @@ public:
         id = Visible::objectCount;
         Visible::objectCount++;
         hitbox = getHitbox(&shape);
+        tag = player;
     }
+    const float fireRate = 0.2;
+    float lastShot = fireRate;
     void update(float elapsedTime) override;
     //  void shoot();
 private:

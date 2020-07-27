@@ -10,8 +10,6 @@
 
 class Visible
 {
-private:
-
 public:
     enum tags
     {
@@ -20,10 +18,7 @@ public:
 
     virtual void update(float elapsedTime);
 
-    bool isOutOfScreen();
-
     void moveAcrossScreen();
-
     sf::Rect<float> getHitbox(const sf::CircleShape *shape);
 
     sf::Vector2<float> position;

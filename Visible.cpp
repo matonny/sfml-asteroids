@@ -12,9 +12,6 @@ void Visible::update(float elapsedTime)
 }
 void Visible::moveAcrossScreen()
 {
-    sf::Vector2<float> currentPosition = shape.getPosition();
-    std::cout <<  hitbox.left << " " << hitbox.top << std::endl;
-    std::cout << shape.getPosition().x << " " << shape.getPosition().y << std::endl << std::endl;
     if (position.y < -shape.getRadius()) //upper edge
     {
         position.y = Game::SCREEN_HEIGHT+shape.getRadius();
