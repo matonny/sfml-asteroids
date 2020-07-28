@@ -46,7 +46,7 @@ void Player::update(float elapsedTime)
     {
         if (lastShot >= fireRate)
         {
-            auto x = std::make_shared<Bullet>(this->shape);
+            auto x = std::make_shared<Bullet>(shape);
             Game::gameObjectManager.add(x->id , x);
             lastShot = 0.0;
             std::cout << "shooting " << x->id << std::endl;

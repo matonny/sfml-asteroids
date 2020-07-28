@@ -4,6 +4,7 @@
 #include "GameObjectManager.h"
 #include <iostream>
 #include "Visible.h"
+#include "Bullet.h"
 
 std::map<int, std::shared_ptr<Visible>> GameObjectManager::allObjects;
 
@@ -22,8 +23,15 @@ void GameObjectManager::updateAll()
     {
         itr->second->update(timeDelta.asSeconds());
         collisionCheck(itr->second);
+        if(itr->second->tag == Visible::bullet){
+            std::cout << "bulecik" << std::endl;
+            if(itr->second->isOutOfScreen()){
+                allObjects.erase(itr);
+            }
+        }
         itr++;
     }
+
 }
 
 void GameObjectManager::drawAll(sf::RenderWindow &renderWindow)

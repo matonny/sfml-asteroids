@@ -10,6 +10,13 @@ void Visible::update(float elapsedTime)
 {
 
 }
+bool Visible::isOutOfScreen() {
+    return
+            position.x < 0-shape.getRadius() ||
+            position.y < 0-shape.getRadius() ||
+            position.x > Game::SCREEN_WIDTH+shape.getRadius() ||
+            position.y > Game::SCREEN_HEIGHT+shape.getRadius();
+}
 void Visible::moveAcrossScreen()
 {
     if (position.y < -shape.getRadius()) //upper edge

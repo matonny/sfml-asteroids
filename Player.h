@@ -24,7 +24,7 @@ public:
         hitbox = getHitbox(&shape);
         tag = player;
     }
-    const float fireRate = 0.2;
+    const float fireRate = 0.0;
     float lastShot = fireRate;
     void update(float elapsedTime) override;
     //  void shoot();

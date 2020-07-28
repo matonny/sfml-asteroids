@@ -28,15 +28,4 @@ void Bullet::update(float elapsedTime){
     hitbox.left+=changeX;
     hitbox.top+=changeY;
     shape.setPosition(position.x, position.y);
-    if(isOutOfScreen()){
-        std::cout << "erasing " << id << std::endl;
-        GameObjectManager::allObjects.erase(id);
-    }
-}
-inline bool Bullet::isOutOfScreen() {
-    return
-    position.x < 0-shape.getRadius() ||
-    position.y < 0-shape.getRadius() ||
-    position.x > Game::SCREEN_WIDTH+shape.getRadius() ||
-    position.y > Game::SCREEN_HEIGHT+shape.getRadius();
 }

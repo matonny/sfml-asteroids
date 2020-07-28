@@ -19,6 +19,7 @@ public:
     virtual void update(float elapsedTime);
 
     void moveAcrossScreen();
+    bool isOutOfScreen();
     sf::Rect<float> getHitbox(const sf::CircleShape *shape);
 
     sf::Vector2<float> position;

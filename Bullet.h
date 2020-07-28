@@ -16,7 +16,6 @@ public:
         initBullet(player);
     }
     void update(float elapsedTime);
-    bool isOutOfScreen();
     const int bulletSize = 10;
     void initBullet(sf::CircleShape player);
 
