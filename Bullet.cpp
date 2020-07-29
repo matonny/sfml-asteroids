@@ -8,8 +8,8 @@
 #include "GameObjectManager.h"
 #include <iostream>
 sf::Vector2<float> Bullet::findRiflePosition(sf::CircleShape player) {
-    float changeX = player.getRadius() * cos((angle + 30) * M_PI / 180);
-    float changeY = player.getRadius() * sin((angle + 30) * M_PI / 180);
+    float changeX = player.getRadius() * cos((player.getRotation() + 30) * M_PI / 180);
+    float changeY = player.getRadius() * sin((player.getRotation() + 30) * M_PI / 180);
     sf::Vector2<float> riflePosition {player.getPosition().x+changeX, player.getPosition().y+changeY};
     return riflePosition;
 }

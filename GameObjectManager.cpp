@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Visible.h"
 #include "Bullet.h"
-
+#include "Game.h"
 std::map<int, std::shared_ptr<Visible>> GameObjectManager::allObjects;
 
 #include "GameObjectManager.h"
@@ -23,10 +23,11 @@ void GameObjectManager::updateAll()
     {
         itr->second->update(timeDelta.asSeconds());
         collisionCheck(itr->second);
-        if(itr->second->tag == Visible::bullet){
-            std::cout << "bulecik" << std::endl;
-            if(itr->second->isOutOfScreen()){
+        if(itr->second->isOutOfScreen()){
+            if(itr->second->tag == Visible::bullet){
                 allObjects.erase(itr);
+            }else{
+                itr->second->moveAcrossScreen();
             }
         }
         itr++;
@@ -56,8 +57,15 @@ void GameObjectManager::collisionCheck(std::shared_ptr<Visible> object)
                 {
                     if (object->hitbox.intersects(itr->second->hitbox))
                     {
-                        //allObjects.erase(object->id);
-                        //Game::gameOver();
+                        allObjects.erase(object->id);
+                        Game::gameOver();
+                    }
+                }
+            }
+            case Visible::bullet:{
+                if(itr->second->tag == Visible::rock){
+                    if(object->hitbox.intersects(itr->second->hitbox)){
+
                     }
                 }
             }

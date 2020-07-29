@@ -14,6 +14,7 @@ public:
     static void Start();
     const static int SCREEN_WIDTH = 1920;
     const static int SCREEN_HEIGHT = 1080;
+    static float randomNumberGenerator(float min, float max);
     static void gameLoop();
     static std::map<sf::Keyboard::Key, bool> keyMap;
     static GameObjectManager gameObjectManager;

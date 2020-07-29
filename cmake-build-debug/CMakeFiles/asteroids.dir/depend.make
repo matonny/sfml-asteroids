@@ -163,6 +163,7 @@ CMakeFiles/asteroids.dir/Game.cpp.o: /usr/local/include/SFML/Window/WindowHandle
 CMakeFiles/asteroids.dir/Game.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/asteroids.dir/GameObjectManager.cpp.o: ../Bullet.h
+CMakeFiles/asteroids.dir/GameObjectManager.cpp.o: ../Game.h
 CMakeFiles/asteroids.dir/GameObjectManager.cpp.o: ../GameObjectManager.cpp
 CMakeFiles/asteroids.dir/GameObjectManager.cpp.o: ../GameObjectManager.h
 CMakeFiles/asteroids.dir/GameObjectManager.cpp.o: ../Visible.h
@@ -322,6 +323,7 @@ CMakeFiles/asteroids.dir/Player.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/asteroids.dir/Player.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/asteroids.dir/Player.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/asteroids.dir/Rock.cpp.o: ../Game.h
 CMakeFiles/asteroids.dir/Rock.cpp.o: ../GameObjectManager.h
 CMakeFiles/asteroids.dir/Rock.cpp.o: ../Rock.cpp
 CMakeFiles/asteroids.dir/Rock.cpp.o: ../Rock.h

@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "Rock.h"
 #include "GameObjectManager.h"
+#include <random>
 
 sf::RenderWindow Game::mainWindow;
 Game::GameState Game::currentState;
@@ -30,10 +31,7 @@ void Game::gameLoop()
     sf::Vector2<float> playerPosition(SCREEN_WIDTH/2,SCREEN_HEIGHT/2);
     auto player = std::make_shared<Player>(30, playerShape, playerPosition);
     gameObjectManager.add(player->id, player);
-    for(int i = 0; i < 10; i++){
-        auto x = std::make_shared<Rock>(Rock::big);
-        Game::gameObjectManager.add(x->id, x);
-    }
+    Rock::spawnRocks(3);
     while (mainWindow.isOpen())
     {
 
@@ -65,6 +63,7 @@ void Game::gameLoop()
                 default:
             {
                 mainWindow.clear(sf::Color(255,255,255));
+                mainWindow.close();
             }
         }
     }
@@ -72,6 +71,11 @@ void Game::gameLoop()
 void Game::gameOver() {
     currentState = Exiting;
 }
-
+float Game::randomNumberGenerator(float min, float max) {
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::uniform_int_distribution<std::mt19937::result_type> dist6(min,max);
+    return dist6(rng);
+}
 
 

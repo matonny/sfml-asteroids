@@ -25,9 +25,12 @@ public:
     };
     static std::vector<Rock> allRocks;
 
-
+    static const int playerSafeZone = 200;
     void initRock(size rockSize);
     void update(float elapsedTime);
+    static sf::Vector2<float> getRandomPosition();
+    static void spawnRocks(int rockAmount);
+    static void spawnRocks(Rock parentRock);
     void destroyRock();
 
 private:

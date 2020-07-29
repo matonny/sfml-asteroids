@@ -6,37 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/mateusz/Desktop/C++/asteroids/Bullet.cpp
-Bullet.h
-/Users/mateusz/Desktop/C++/asteroids/Bullet.h
-Math.h
+/Users/mateusz/Desktop/C++/asteroids/Game.cpp
+iostream
 -
 Game.h
 /Users/mateusz/Desktop/C++/asteroids/Game.h
+Player.h
+/Users/mateusz/Desktop/C++/asteroids/Player.h
+Rock.h
+/Users/mateusz/Desktop/C++/asteroids/Rock.h
 GameObjectManager.h
 /Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
-iostream
+random
 -
-
-/Users/mateusz/Desktop/C++/asteroids/Bullet.h
-Visible.h
-/Users/mateusz/Desktop/C++/asteroids/Visible.h
 
 /Users/mateusz/Desktop/C++/asteroids/Game.h
 SFML/Graphics.hpp
 /Users/mateusz/Desktop/C++/asteroids/SFML/Graphics.hpp
-GameObjectManager.h
-/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
-
-/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.cpp
-GameObjectManager.h
-/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
-iostream
--
-Visible.h
-/Users/mateusz/Desktop/C++/asteroids/Visible.h
-Bullet.h
-/Users/mateusz/Desktop/C++/asteroids/Bullet.h
 GameObjectManager.h
 /Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
 
@@ -46,21 +32,23 @@ string
 Visible.h
 /Users/mateusz/Desktop/C++/asteroids/Visible.h
 
-/Users/mateusz/Desktop/C++/asteroids/Player.cpp
-Game.h
-/Users/mateusz/Desktop/C++/asteroids/Game.h
-Player.h
-/Users/mateusz/Desktop/C++/asteroids/Player.h
-math.h
--
-Bullet.h
-/Users/mateusz/Desktop/C++/asteroids/Bullet.h
-iostream
--
-
 /Users/mateusz/Desktop/C++/asteroids/Player.h
 Visible.h
 /Users/mateusz/Desktop/C++/asteroids/Visible.h
+
+/Users/mateusz/Desktop/C++/asteroids/Rock.cpp
+Rock.h
+/Users/mateusz/Desktop/C++/asteroids/Rock.h
+Math.h
+/Users/mateusz/Desktop/C++/asteroids/Math.h
+Game.h
+/Users/mateusz/Desktop/C++/asteroids/Game.h
+
+/Users/mateusz/Desktop/C++/asteroids/Rock.h
+Visible.h
+/Users/mateusz/Desktop/C++/asteroids/Visible.h
+GameObjectManager.h
+/Users/mateusz/Desktop/C++/asteroids/GameObjectManager.h
 
 /Users/mateusz/Desktop/C++/asteroids/Visible.h
 SFML/Graphics.hpp

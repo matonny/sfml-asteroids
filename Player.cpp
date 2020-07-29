@@ -52,8 +52,7 @@ void Player::update(float elapsedTime)
             std::cout << "shooting " << x->id << std::endl;
         }
     }
-        shape.setPosition(position.x, position.y);
-        moveAcrossScreen();
+        shape.setPosition(position.x, position.y); 
 
 
 }

@@ -21,6 +21,7 @@ public:
 
 
 private:
+
     int angle;
     float velocity = 1500.0;
     sf::Vector2<float> findRiflePosition(sf::CircleShape player);
